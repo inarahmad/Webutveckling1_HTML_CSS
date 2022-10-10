@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="sv">
+<title>Kontakt - Söt och Elegant Bageriet</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="styles.css" type="text/css" rel="stylesheet" />
+
+<body>
+
+
+
+<div class="header">
+
+  <img src="images/logo.png" alt="logo">
+  <div class="topnav">
+  <a href="home.html">HOME</a>
+  <a href="sortiment.html">SORTIMENT</a>
+  <a href="gallery.html">GALLERI</a>
+  <a href="about.html">OM OSS</a>
+  <a href="contact.html" style="background-color: #903030; color: white">KONTAKT</a>
+  </div>
+</div>
+
+<div class="contentouter">
+
+
+  <div class="thecontent">
+  <h3>Har du frågor eller synpunkter kontakta gärna någon av oss.<br>Vill du göra en beställning välja att beställa på nedanstående formulär eller kontakta vår butik.</h3><br>
+  <img src="images/contact.jpg" style="max-width: 480px" alt="Kontakta bageri">
+  <p>Beställningar bör vara oss tillhanda klockan 15:30, två dagar innan önskad avhämtning.<br>Under speciella högtider (som till exempel midsommar, jul, mors- och farsdag) uppskattar vi om beställningen är oss tillhanda minst en vecka i förväg. När beställningen är mottagen och registrerad får du får ett bekräftelsemail</p>
+  <br>
+
+
+  <div class="container">
+  <form>
+  <div class="row">
+      <div class="col-25">
+        <label for="fname">NAMN</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="name" name="name" placeholder="Ditt namn..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">TELEFONNUMMER</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="phone" name="phone" placeholder="Ditt telefonnummer..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">EMAIL</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="email" name="email" placeholder="Ditt email.." pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$" oninvalid="this.setCustomValidity('Ange email adress')">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="topic">AMNE</label>
+      </div>
+      <div class="col-75" style="padding: 12px 0; text-align: left;">
+          <input type="radio" name="type" value="message"> MEDDELANDE
+          <input type="radio" name="type" value="order" style="margin-left: 12px"> BESTÄLLNING
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">MEDDELANDE</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Skriv ditt meddelande eller beställning.." style="height:200px"></textarea>
+        <button class="button">SKICKA</button>
+      </div>
+    </div>
+    <br>
+
+
+
+  </form>
+</div>
+<br>
+
+  </div>
+</div>
+
+<div class="footer">
+  <p><a href=""><i class="fa fa-facebook-square"></i></a>
+<a href=""><i class="fa fa-instagram"></i></a>
+</p>
+</div>
+
+</body>
+</html>
+
+
+
+

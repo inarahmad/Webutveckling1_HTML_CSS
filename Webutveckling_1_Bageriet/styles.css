@@ -1,0 +1,467 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Source Sans Pro", Arial;
+    background: white;
+    margin: 0px;
+}
+
+/* Header*/
+.header {
+    text-align: left;
+    background-position: top;
+    background-size: cover;
+    min-height: 100%;
+}
+
+.header img{
+    height: 120px;
+    padding-left: 10%;
+}
+
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.promo h1 {
+    font-size: 2em;
+    font-weight: bold;
+    background-color: white;
+    max-width: 40%;
+    padding: 2% 10%;
+    margin: 10% 0;
+    color: #903030;
+    opacity: 1;
+}
+
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    color: #333;
+    margin: 0 10%;
+    float: right;
+    padding-top: 20px;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px ;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #903030;
+    color: white;
+}
+
+/* HOME: Newsletter section */
+.newsletter {
+	background-color: #903030;
+	padding: 15px 10px;
+}
+
+.newsletter p {
+	color: white;
+	text-align: center;
+}
+
+.newsletter form{
+	color: white;
+	text-align: center;
+}
+
+.button{
+	background-color: white;
+	color: #903030; 
+	border: none;
+	padding: 10px 20px;
+	margin: 10px 0 10px 10px;
+	font-weight: bold;
+}
+
+.button:hover{
+	background-color: #B76C6C;
+	color: white;
+}
+
+/* 3 columns that floats next to each other */
+.column {   
+    float: left;
+    width: 33.33%;
+    position: relative;
+    display: inline-block;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+
+
+
+/* Image frame to control the size */
+.imgframe {
+    width: 80%;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 6px 0 rgba(0, 0, 0, 0.19);
+	border: 0;
+}
+
+/* add tooltip for ingredient */
+.column .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #404040;
+    color: #fff;
+
+    text-align: left;
+    border-radius: 6px;
+    padding: 6px 6px;
+    position: absolute;
+    z-index: 1;
+    top: 97%;
+    left: 50%;
+    margin-left: -100px;
+}
+
+.column .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #404040 transparent;
+}
+
+.column:hover .tooltiptext {
+    visibility: visible;
+}
+
+/* Add to center content and limit the sides */
+.thecontent {
+	text-align: center;
+	align-items: center;
+	padding: 0 10%;
+    margin: auto;
+}
+/* Clear floats after the columns */
+.thecontent:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.thecontent h2{
+    margin: 10px;    
+}
+
+.thecontent hr{
+    margin: 20px 0;
+}
+
+/* HOME: Unequal columns */
+.sidecolumn{
+	float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding: 40px 20px;
+}
+
+.sidecolumn h2{
+	margin: 0px;
+}
+
+td{
+    padding: 3px 6px;
+}
+
+/* HOME: map; */
+.centercolumn{
+	float: left;
+    width: 50%;
+    background-color: #f1f1f1;
+    padding: 40px 20px;
+}
+
+iframe{
+	padding-top: 10px;
+    width: 100%;
+    height: 250px;
+}
+
+/* SORTIMENT: 
+#bread {
+	text-align: center;
+	align-items: center;
+	padding: 0 10%;
+} */
+/* Clear floats after the columns 
+#bread:after {
+    content: "";
+    display: table;
+    clear: both;
+}*/
+
+h2 {
+    margin-top: 30px;
+}
+
+
+/* Style the sortiment nav filter */
+.contentouter {
+    color: #333;
+    margin: 2% 5%;
+    text-align: center;
+}
+
+.contentouter a {
+    display: inline-block;
+    color: #333;
+    text-align: center;
+    padding: 14px ;
+    margin: 10px 0;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.contentouter a:hover{
+    background-color: grey;
+    color: white;
+}
+
+.contentouter a:focus, .contentouter a:active{
+    background-color: grey;
+    color: white;
+}
+
+.contentouter p {
+	margin: 5px 10px 20px;
+}
+
+/* Clear floats after the columns */
+.contentouter:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.imgabout {
+    padding: 2% 20% 0 ;
+    width: 100%;
+    height: auto;
+}
+
+/* Sortiment filter
+.sortiment div {
+    display: none !important;
+}
+
+.sortiment div:target {
+    display: block !important;
+}*/
+.contactform {
+    text-align: left;
+    max-width: 400px;
+
+}
+
+.contactform input{
+    padding: 10px;
+    margin: 10px 0 30px;
+    width: 400px;
+}
+
+/* Order option*/
+  #order {
+    display: none;
+  }
+  .thecontent input:checked ~ #order{
+    display: block;
+  }
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 8px;
+}
+
+/* Create four equal columns that sits next to each other */
+.col-50 {
+    flex: 33.3%;
+    max-width: 33.3%;
+    padding: 0 8px;
+}
+
+.col-50 img {
+    margin-top: 16px;
+    vertical-align: middle;
+}
+
+/* Footer */
+.footer {
+    height: 80px;
+    text-align: center;
+    background: #707070;
+    padding: 10px;
+    margin: auto;
+
+    bottom:0;
+    width:100%;
+
+}
+.footer a{
+	margin: 5px;
+	color: white;
+	font-size: 24px;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.container button {
+    background-color: #903030;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    float: right;
+}
+
+
+.container {
+    background-color: #f2f2f2;
+    padding: 2% 10%;
+}
+
+.col-25 {
+    float: left;
+    text-align: right;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: right;
+    width: 75%;
+    margin-top: 6px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 650px) {
+    .col-25, .col-75, input[type=text] {
+        width: 100%;
+        margin-top: 0;
+        text-align: center;
+    }
+    .container button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container{   
+        padding: 2% 3%;
+    }
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .column, .centercolumn, .sidecolumn{   
+        width: 100%;
+        padding: 10px 5px;
+    }
+    .thecontent {
+        padding: 0;
+    }
+    .imgframe, img{
+    	width: 50%;
+        height: auto;
+        padding: 0;
+    }
+    .imgabout {
+        padding: 0 5%;
+        width: 90%;
+    }
+    .header img{
+        width: 30%;
+        height: auto;
+        padding: 0;
+    }
+
+    .promo h1{
+    	font-size: 1.5em;
+        min-width: 100%;
+        background-color: transparent;
+    }
+    h2{
+        font-size: 1.5em;
+    }
+    .header{
+        text-align: center;
+    }
+    .col-50 {
+    flex: 50%;
+    max-width: 50%;
+}
+
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+    .topnav{
+        float: none;
+    }
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+    .header h1{
+    	font-size: 0.5em;
+    }
+    .header img{
+        width: 50%;
+        height: auto;
+        padding: 0;
+    }
+    .promo {
+        visibility: hidden;
+    } 
+    .col-50 {
+    flex: 100%;
+    max-width: 100%;
+    padding: 0 8px;
+}
+}
